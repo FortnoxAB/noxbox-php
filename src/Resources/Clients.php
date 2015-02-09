@@ -30,14 +30,15 @@ class Clients extends Resource
 	 * Registers external access token for the client.
 	 *
 	 * @param $externalAccessToken
+	 * @param $erpName
 	 *
 	 * @return array
 	 */
-	public function setExternalAccessToken($externalAccessToken) {
+	public function setExternalAccessToken($externalAccessToken, $erpName) {
 		$this->_endpoint = 'my/accesstoken';
 		return parent::create(null, array(
 			'externalSystemAccessToken' => $externalAccessToken,
-			'noxIntegration'            => 'Fortnox',
+			'noxIntegration'            => $erpName,
 			'status'                    => 'Active'
 		));
 	}
