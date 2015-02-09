@@ -6,6 +6,23 @@ By doing this you will recieve a ERP Access Token that is mandatory.
 
 # API Exemples
 
+Create new client
+```php
+$resource = new Resources\Clients($erpAccessToken, $mode = 'production'/'test');
+$client = $resource->create(null, $data);
+$clientAccessToken = $client['accesstoken'];
+```
+
+Load existing client
+```php
+$resource = new Resources\Clients($erpAccessToken, $mode = 'production'/'test');
+$client = $resource->find($clientId);
+$clientAccessToken = $client['accesstoken'];
+
+```
+
+Now you have the client access token. You can start performing client specific actions.
+
 Init a resource (Invoice in this case)
 ```php
 $resource = new Resources\Invoices($clientAccessToken, $mode = 'production'/'test');
