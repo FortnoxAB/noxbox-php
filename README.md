@@ -43,7 +43,7 @@ Update from that resource (PUT)
 $invoice = $resource->update($id, $data);
 ```
 
-Removev (DELETE)
+Remove (DELETE)
 ```php
 $invoice = $resource->delete($id);
 ```
