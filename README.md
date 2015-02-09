@@ -46,7 +46,7 @@ $invoice = $resource->update($id, $data);
 
 Remove from that resource (DELETE)
 ```php
-$invoice = $resource->update($id, $data);
+$invoice = $resource->delete($id);
 ```
 
 Deleting a resource
