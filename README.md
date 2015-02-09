@@ -6,13 +6,6 @@ By doing this you will recieve a ERP Access Token that is mandatory.
 
 # API Exemples
 
-Creating a new resource
-```php
-$raw_response = apiCall( 'POST', 'articles', '{"Article":{"Description":"My description"}}' );
-$response = json_decode( $raw_response, true );
-$article_number = $response[ 'Article' ][ 'ArticleNumber' ];
-```
-
 Init a resource (Invoice in this case)
 ```php
 $resource = new Resources\Invoices($clientAccessToken, $mode = 'production'/'test');
