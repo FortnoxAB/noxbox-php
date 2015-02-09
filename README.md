@@ -4,7 +4,7 @@
 Make sure you have finished registration with Nox Finans as a ERP Client before using this integration wrapper.
 By doing this you will recieve a ERP Access Token that is mandatory.
 
-# API Exemples
+# API Examples
 
 Create new client
 ```php
@@ -38,20 +38,14 @@ Load from that resource (GET)
 $invoice = $resource->find($id);
 ```
 
-
 Update from that resource (PUT)
 ```php
 $invoice = $resource->update($id, $data);
 ```
 
-Remove from that resource (DELETE)
+Remove (DELETE)
 ```php
-$invoice = $resource->update($id, $data);
-```
-
-Deleting a resource
-```php
-$resource->delete($id);
+$invoice = $resource->delete($id);
 ```
 
 # Licence
