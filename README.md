@@ -4,7 +4,7 @@
 Make sure you have finished registration with Nox Finans as a ERP Client before using this integration wrapper.
 By doing this you will recieve a ERP Access Token that is mandatory.
 
-# API Exemples
+# API Examples
 
 Create new client
 ```php
