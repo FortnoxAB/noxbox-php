@@ -38,20 +38,14 @@ Load from that resource (GET)
 $invoice = $resource->find($id);
 ```
 
-
 Update from that resource (PUT)
 ```php
 $invoice = $resource->update($id, $data);
 ```
 
-Remove from that resource (DELETE)
+Removev (DELETE)
 ```php
 $invoice = $resource->delete($id);
-```
-
-Deleting a resource
-```php
-$resource->delete($id);
 ```
 
 # Licence
